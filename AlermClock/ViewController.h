@@ -8,7 +8,33 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    
+    
+    //変数の宣言
+    int hour;
+    int minute;
+    int second;
+    
+    IBOutlet UILabel *hourLabel;
+    IBOutlet UILabel *minuteLabel;
+    IBOutlet UILabel *secondLabel;
+    
+    
+    IBOutlet UITextField *hourTextField;//時間入力
+    IBOutlet UITextField *minuteTextField;
+    IBOutlet UITextField *secondTextField;
+    
+    NSTimer *timer;
+    
+    
+}
+
+//メソッドの宣言
+
+-(IBAction)settei;
+-(IBAction)kaizyo;
+
 
 
 @end
