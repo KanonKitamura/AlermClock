@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController{
+@interface ViewController : UIViewController<UITextFieldDelegate>{
     
     
     //変数の宣言
@@ -23,7 +23,6 @@
     
     IBOutlet UITextField *hourTextField;//時間入力
     IBOutlet UITextField *minuteTextField;
-    IBOutlet UITextField *secondTextField;
     
     NSTimer *timer;
     
